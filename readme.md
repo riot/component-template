@@ -1,14 +1,14 @@
-<%= name %>
+# <%= name %>
 
 <%= description %>
 
-# installation
+## installation
 
 ```
 npm i <%= name %>
 ```
 
-# Usage
+## Usage
 
 ```riot
 <app>
