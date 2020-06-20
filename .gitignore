@@ -57,6 +57,6 @@ generated
 
 # these files are generated anyway
 .nycrc
-
+index.js
 !.gitmodules
 !.travis.yml
