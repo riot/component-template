@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "cov": "nyc report --reporter=text-lcov | coveralls",
+    "cov-html": "nyc report --reporter=html",
+    "build": "riot -c riot.config my-component.riot",
+    "prepublishOnly": "npm test",
+    "test": "npm run build && nyc --require esm --require jsdom-global/register mocha test.js"
+  },
+  "devDependencies": {
+    "@riotjs/compiler": "^4.9.2",
+    "chai": "^4.2.0",
+    "esm": "^3.2.25",
+    "jsdom": "^16.2.2",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "@riotjs/cli": "^4.0.3",
+    "riot": "^4.13.2"
+  }
+}
