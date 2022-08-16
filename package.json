@@ -7,14 +7,14 @@
     "test": "npm run build && nyc --require esm --require jsdom-global/register mocha test.js"
   },
   "devDependencies": {
-    "@riotjs/cli": "^6.0.5",
-    "@riotjs/compiler": "^6.0.1",
-    "chai": "^4.3.4",
+    "@riotjs/cli": "^6.1.0",
+    "@riotjs/compiler": "^6.3.2",
+    "chai": "^4.3.6",
     "esm": "^3.2.25",
-    "jsdom": "^16.6.0",
+    "jsdom": "^20.0.0",
     "jsdom-global": "^3.0.2",
     "mocha": "^8.4.0",
     "nyc": "^15.1.0",
-    "riot": "^6.0.2"
+    "riot": "^7.0.3"
   }
 }
