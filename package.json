@@ -1,20 +1,21 @@
 {
   "scripts": {
-    "cov": "nyc report --reporter=text-lcov",
-    "cov-html": "nyc report --reporter=html",
+    "cov": "c8 report --reporter=text-lcov",
+    "cov-html": "c8 report --reporter=html",
     "build": "riot -c riot.config my-component.riot",
     "prepublishOnly": "npm test",
-    "test": "npm run build && nyc --require esm --require jsdom-global/register mocha test.js"
+    "test": "npm run build && c8 mocha --require jsdom-global/register test.js"
   },
+  "type": "module",
   "devDependencies": {
-    "@riotjs/cli": "^6.1.0",
-    "@riotjs/compiler": "^6.3.2",
-    "chai": "^4.3.6",
-    "esm": "^3.2.25",
-    "jsdom": "^20.0.0",
+    "@riotjs/cli": "^9.0.5",
+    "@riotjs/compiler": "^9.0.6",
+    "c8": "^8.0.1",
+    "chai": "^4.3.10",
+    "jsdom": "^23.0.1",
     "jsdom-global": "^3.0.2",
-    "mocha": "^8.4.0",
-    "nyc": "^15.1.0",
-    "riot": "^7.0.3"
+    "mocha": "^10.2.0",
+    "prettier": "^3.1.0",
+    "riot": "^9.1.2"
   }
 }
